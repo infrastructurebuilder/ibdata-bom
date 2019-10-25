@@ -45,6 +45,12 @@
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.data</groupId>
+        <artifactId>ibdata-testing</artifactId>
+        <version>${ib.data.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder.data</groupId>
         <artifactId>ibdata-database-ingesters</artifactId>
         <version>${ib.data.version}</version>
       </dependency>
