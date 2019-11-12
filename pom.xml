@@ -57,6 +57,11 @@
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.data</groupId>
+        <artifactId>ibdata-database-type-impls</artifactId>
+        <version>${ib.data.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder.data</groupId>
         <artifactId>ibdata-default-ingesters</artifactId>
         <version>${ib.data.version}</version>
       </dependency>
