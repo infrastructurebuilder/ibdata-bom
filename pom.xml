@@ -3,7 +3,7 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>17</version>
+    <version>19-SNAPSHOT</version>
   </parent>
   <groupId>org.infrastructurebuilder.data</groupId>
   <artifactId>ibdata-bom</artifactId>
@@ -21,7 +21,7 @@
   </scm>
   <properties>
     <git.url.base>git@github.com:${team.group.id}</git.url.base>
-    <ib.exceptions.version>20</ib.exceptions.version>
+    <ib.exceptions.version>25-SNAPSHOT</ib.exceptions.version>
     <ib.data.version>0.4.0-SNAPSHOT</ib.data.version>
     <ib.core.bom.version>0.14.1.0-SNAPSHOT</ib.core.bom.version>
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
@@ -34,7 +34,7 @@
         <artifactId>ibcore-bom</artifactId>
         <version>${ib.core.bom.version}</version>
         <type>pom</type>
-        <scope>import</scope> <!--  FIXME Does this even work? -->
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.data</groupId>
