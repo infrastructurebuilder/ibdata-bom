@@ -3,11 +3,11 @@
   <parent>
     <groupId>org.infrastructurebuilder</groupId>
     <artifactId>ibparent-minimal</artifactId>
-    <version>17</version>
+    <version>21</version>
   </parent>
   <groupId>org.infrastructurebuilder.data</groupId>
   <artifactId>ibdata-bom</artifactId>
-  <version>0.3.2.1-SNAPSHOT</version>
+  <version>0.3.4.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Import pom for standardizing dependency sets of IBData</description>
@@ -21,9 +21,9 @@
   </scm>
   <properties>
     <git.url.base>git@github.com:${team.group.id}</git.url.base>
-    <ib.exceptions.version>20</ib.exceptions.version>
-    <ib.data.version>0.3.2</ib.data.version>
-     <ib.core.bom.version>0.14.0.0</ib.core.bom.version>
+    <ib.exceptions.version>26</ib.exceptions.version>
+    <ib.data.version>0.3.4-SNAPSHOT</ib.data.version>
+    <ib.core.bom.version>0.15.0.0-SNAPSHOT</ib.core.bom.version>
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
     <git.url>${git.url.base}/${project.artifactId}.git</git.url>
   </properties>
@@ -34,7 +34,7 @@
         <artifactId>ibcore-bom</artifactId>
         <version>${ib.core.bom.version}</version>
         <type>pom</type>
-        <scope>import</scope> <!--  FIXME Does this even work? -->
+        <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>org.infrastructurebuilder.data</groupId>
