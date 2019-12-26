@@ -7,7 +7,7 @@
   </parent>
   <groupId>org.infrastructurebuilder.data</groupId>
   <artifactId>ibdata-bom</artifactId>
-  <version>0.3.5.1-SNAPSHOT</version>
+  <version>0.3.6.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>${project.artifactId}</name>
   <description>Import pom for standardizing dependency sets of IBData</description>
@@ -22,7 +22,7 @@
   <properties>
     <git.url.base>git@github.com:${team.group.id}</git.url.base>
     <ib.exceptions.version>28</ib.exceptions.version>
-    <ib.data.version>0.3.5</ib.data.version>
+    <ib.data.version>0.3.6-SNAPSHOT</ib.data.version>
     <ib.core.bom.version>0.15.1.0</ib.core.bom.version>
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
     <git.url>${git.url.base}/${project.artifactId}.git</git.url>
