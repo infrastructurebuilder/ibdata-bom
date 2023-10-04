@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -10,7 +12,7 @@
 
   <groupId>org.infrastructurebuilder.data</groupId>
   <artifactId>ibdata-bom</artifactId>
-  <version>0.3.6.0-SNAPSHOT</version>
+  <version>0.40.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${project.artifactId}</name>
@@ -27,9 +29,10 @@
 
   <properties>
     <git.url.base>git@github.com:${team.group.id}</git.url.base>
-    <ib.exceptions.version>29</ib.exceptions.version>
-    <ib.data.version>0.3.6-SNAPSHOT</ib.data.version>
-    <ib.core.bom.version>0.16.0.1</ib.core.bom.version>
+    <ib.exceptions.version>90</ib.exceptions.version>
+    <ib.data.model.version>0.40.0-SNAPSHOT</ib.data.model.version>
+    <ib.data.version>0.40.0-SNAPSHOT</ib.data.version>
+    <ib.core.bom.version>0.20.1.0-SNAPSHOT</ib.core.bom.version>
     <ib.site.path>${project.groupId}/${project.artifactId}/${project.version}</ib.site.path>
     <git.url>${git.url.base}/${project.artifactId}.git</git.url>
   </properties>
@@ -44,17 +47,43 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>org.infrastructurebuilder.data</groupId>
-        <artifactId>ibdata-reference-root</artifactId>
-        <version>${ib.data.version}</version>
-        <type>pom</type>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>ibdata-model</artifactId>
+        <version>${ib.data.model.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.infrastructurebuilder.data</groupId>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>ibdata-utils</artifactId>
+        <version>${ib.data.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>ibdata-api</artifactId>
+        <version>${ib.data.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
         <artifactId>ibdata-testing</artifactId>
         <version>${ib.data.version}</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>ibdata-type-impls</artifactId>
+        <version>${ib.data.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infrastructurebuilder.data</groupId>
+        <artifactId>ibdata-database-type-impls</artifactId>
+        <version>${ib.data.version}</version>
+      </dependency>
+    <dependency>
+      <groupId>org.infrastructurebuilder.data</groupId>
+      <artifactId>ibdata-avro-types</artifactId>
+        <version>${ib.data.version}</version>
+    </dependency>
+
+      <!--
       <dependency>
         <groupId>org.infrastructurebuilder.data</groupId>
         <artifactId>ibdata-database-ingesters</artifactId>
@@ -80,6 +109,7 @@
         <artifactId>ibdata-type-impls</artifactId>
         <version>${ib.data.version}</version>
       </dependency>
+      -->
       <dependency>
         <groupId>org.infrastructurebuilder</groupId>
         <artifactId>ibexceptions</artifactId>
